@@ -1,0 +1,150 @@
+.App {
+  text-align: center;
+}
+* {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #333;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+.filters.card {
+  border-radius: 15px; 
+  width: 300px;  
+  height: auto;  
+  overflow: hidden;  
+}
+
+.col-md-8.card-body {
+  padding: 20px;
+  border-radius: 15px !important; 
+  height: 10px;
+}
+
+.card {
+  border-radius: 15px !important; /*Made the article cards round */
+  background-color: #f8f8f8 !important;
+  border: 1px solid #ddd;
+  overflow: hidden;
+  margin-bottom: 50px !important;
+}
+
+.card-img {
+  width: 150px !important;
+  height: 100px !important;
+  border-radius: 12px !important;
+  margin-left: 20px;
+  margin-top: 10px; 
+  margin-right: 20px;
+}
+
+.card-body { /*changes the filter box */
+  padding: 15px !important;
+}
+
+.card-title {
+  font-family: Arial, sans-serif;
+  color: black;
+  font-weight: bold;
+  font-size: medium;
+  text-align: left;
+  margin-left: 10px;
+  margin-top: 20px;
+  
+}
+
+.card-text {
+  font-family: Arial, sans-serif;
+  color: rgb(78, 78, 78);
+}
+
+.card-text small {
+  display: block;
+  font-size: 12px; 
+  font-family: Arial, sans-serif;
+  color: rgb(91, 91, 91);
+  margin-right: 20px;
+  margin-left: 10px;
+}
+
+
+.filter-section, .articles {
+  padding: 20px;
+  background-color: #333; 
+  font-weight: bolder;
+}
+
+.articles {
+  background-color: #f2f2f2; 
+  padding: 20px;
+  margin: 20px 0;
+}
+
+
+
+
+header {
+  width: 100%; 
+  background-color: #333;
+  color: white; 
+  padding: 20px 0;
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.no-gutter {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.no-gutter > [class^="col-"] {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.container {
+  display: flex;
+  width: 100%; 
+  justify-content: space-between;
+  max-width: 100%; 
+  padding: 20px; 
+}
+
+.col-md-4, .col-md-8 {
+  padding: 15px; 
+}
+
+.row-1{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.row-2{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+@media (max-width: 900px) {
+  .container {
+      flex-direction: column; 
+      align-items: center; 
+      justify-content: center;
+  }
+
+  .filters.card {
+      margin-bottom: 20px; 
+      align-items: center; 
+  }
+}
